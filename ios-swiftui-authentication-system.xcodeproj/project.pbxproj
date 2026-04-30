@@ -71,7 +71,6 @@
 		D92228CCE764A08872FE9B34 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		DA2DD75E4F7BB85D46D74E27 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		DCA11E8D692AC571C94D735D /* AuthSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSession.swift; sourceTree = "<group>"; };
-		E68EFC870B8CFBEB9A11790E /* AuthenticationSystem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AuthenticationSystem.entitlements; sourceTree = "<group>"; };
 		EC8192D44C58B86105B42890 /* AuthRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRemoteDataSource.swift; sourceTree = "<group>"; };
 		F566AB94BAEF9B6CF463D6B6 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
 		FE06E94D9B5376A9556BD003 /* SignupUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUseCase.swift; sourceTree = "<group>"; };
@@ -226,7 +225,6 @@
 		CCC36722B24BF3F19733BFD6 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				E68EFC870B8CFBEB9A11790E /* AuthenticationSystem.entitlements */,
 				2991FF703807B071A24E9FCB /* AuthenticationSystemApp.swift */,
 				5345C7255C888886421DC601 /* GoogleService-Info.plist */,
 				1F4E1E21ABC77C821F75D72A /* Info.plist */,
@@ -521,7 +519,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = App/AuthenticationSystem.entitlements;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
+				CODE_SIGN_ENTITLEMENTS = Resources/AuthenticationSystem.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_ASSET_PATHS = "\"Resources\"";
 				GENERATE_INFOPLIST_FILE = YES;
@@ -544,7 +543,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = App/AuthenticationSystem.entitlements;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
+				CODE_SIGN_ENTITLEMENTS = Resources/AuthenticationSystem.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_ASSET_PATHS = "\"Resources\"";
 				GENERATE_INFOPLIST_FILE = YES;

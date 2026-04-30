@@ -28,7 +28,7 @@ targets:
       - package: GoogleSignIn
         product: GoogleSignIn
     entitlements:
-      path: App/AuthenticationSystem.entitlements
+      path: Resources/AuthenticationSystem.entitlements
     info:
       path: App/Info.plist
       properties:
@@ -45,3 +45,4 @@ targets:
         SWIFT_VERSION: 5.0
         TARGETED_DEVICE_FAMILY: "1,2"
         DEVELOPMENT_ASSET_PATHS: '"Resources"'
+        CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION: YES
