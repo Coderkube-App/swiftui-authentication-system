@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0640D2C51106D6C786646892 /* AuthRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F3BCB93C60BD6A147078FA /* AuthRepositoryImpl.swift */; };
+		13531B2B67F3AC0114CB896C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4357B85BDE956847A216AAD9 /* AppCoordinator.swift */; };
+		16E62AD49E1B820D63F4DD37 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ECBD54082C96D4F8B67494 /* LoginView.swift */; };
+		21EF33E9535FBEDA4D8565AE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E67047B6790FC7F794782511 /* FirebaseAuth */; };
+		2F6CE9E8FBD6A43AFAB42AC0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05F4966F1EDB985855074 /* User.swift */; };
+		49DA3A12C2961E557605722A /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB015D4B0A5B4ED8591CBF0 /* SignupView.swift */; };
+		4AFF50DBCCBEA1960048C39E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5345C7255C888886421DC601 /* GoogleService-Info.plist */; };
+		4DC8EA684A8EFE1B210C88D4 /* SocialLoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADF6323A06B8970DB6658F7 /* SocialLoginUseCase.swift */; };
+		50C307C9608B105F08E8313E /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F566AB94BAEF9B6CF463D6B6 /* LoginUseCase.swift */; };
+		6257F14C1D40F699C0C80B28 /*  .swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BECBCF52E8418F91EF21E2 /*  .swift */; };
+		66D7FF53A5F3CBD3BC279520 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 3B97EC9E61F619133493A37C /* GoogleSignIn */; };
+		686859F0BEF548CB2952134F /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D7D11C12BC49AE5186DE03 /* SessionManager.swift */; };
+		68DB81DD7144698055C945BA /* AuthRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8192D44C58B86105B42890 /* AuthRemoteDataSource.swift */; };
+		78C3921D9BE78A128EAB2391 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A41F688B6F6B85AB9CA044 /* HomeView.swift */; };
+		7E0E220F27F61AC92C87FA63 /* SignupUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE06E94D9B5376A9556BD003 /* SignupUseCase.swift */; };
+		8A3A6DF996A0181DF08C574C /* AuthSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA11E8D692AC571C94D735D /* AuthSession.swift */; };
+		8B0277AD0B9E5E1CA37A45B3 /* AppleSignInHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFA315069786593041892C2 /* AppleSignInHelper.swift */; };
+		98A59F199D331A3C87B655E1 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429B6FF375FA1E4333C19D4 /* PrimaryButton.swift */; };
+		A94F42A2FD520F69313A9DCE /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F19FE0C4CC4A0E70FFA394 /* ViewState.swift */; };
+		AE53385044508FEB16A12BDA /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2DD75E4F7BB85D46D74E27 /* SignupViewModel.swift */; };
+		BB764A18695A34D76E3CA467 /* GoogleSignInHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9C84863F2173AC5C136444 /* GoogleSignInHelper.swift */; };
+		BE86C28BC94CB5AC707B5047 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE65DF7665C92A25496949A0 /* ToastView.swift */; };
+		C825619EF65BE4AC7A901345 /* LogoutUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823E0738EF64FF697A097A6 /* LogoutUseCase.swift */; };
+		CE46EDD4398E718547AA84CA /* AuthRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6383A0504E66A4C15251ABC /* AuthRepositoryProtocol.swift */; };
+		D0C66FD44CB4E8F000618ED4 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F59D1CA56EF81BE211BB83B /* NetworkServiceProtocol.swift */; };
+		DAE129EB560A5990DF10A66C /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4C25A6A003B689410A455F /* Toast.swift */; };
+		DB5EEABB908FCD77F6D4B14D /* SocialIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86474F59E21475165A8C5D46 /* SocialIconButton.swift */; };
+		E013CC77E63387971C99F60E /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD17F6B8C8CB95001817958 /* KeychainStorage.swift */; };
+		E0C7D07618CA28CA921FCA14 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEECA3011F27C81F696690AB /* HomeViewModel.swift */; };
+		E694C663D0006E0084624AC4 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92228CCE764A08872FE9B34 /* LoginViewModel.swift */; };
+		ECB5BFE3459A5DABD825E04A /* AuthenticationSystemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2991FF703807B071A24E9FCB /* AuthenticationSystemApp.swift */; };
+		F669C5A34DD1F7C1D449C738 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B452A03E68EC9B8653DC1ACE /* CustomTextField.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0FFA315069786593041892C2 /* AppleSignInHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInHelper.swift; sourceTree = "<group>"; };
+		1429B6FF375FA1E4333C19D4 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		1F4E1E21ABC77C821F75D72A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2609C6AF9FB2D796C74A694C /* AuthenticationSystem.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = AuthenticationSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26D7D11C12BC49AE5186DE03 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		2991FF703807B071A24E9FCB /* AuthenticationSystemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationSystemApp.swift; sourceTree = "<group>"; };
+		41F3BCB93C60BD6A147078FA /* AuthRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepositoryImpl.swift; sourceTree = "<group>"; };
+		4357B85BDE956847A216AAD9 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		4823E0738EF64FF697A097A6 /* LogoutUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutUseCase.swift; sourceTree = "<group>"; };
+		49BECBCF52E8418F91EF21E2 /*  .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " .swift"; sourceTree = "<group>"; };
+		5345C7255C888886421DC601 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6AB015D4B0A5B4ED8591CBF0 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		7E4C25A6A003B689410A455F /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		86474F59E21475165A8C5D46 /* SocialIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialIconButton.swift; sourceTree = "<group>"; };
+		8F59D1CA56EF81BE211BB83B /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		A6383A0504E66A4C15251ABC /* AuthRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepositoryProtocol.swift; sourceTree = "<group>"; };
+		AD9C84863F2173AC5C136444 /* GoogleSignInHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInHelper.swift; sourceTree = "<group>"; };
+		AE65DF7665C92A25496949A0 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		B1D05F4966F1EDB985855074 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B452A03E68EC9B8653DC1ACE /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		BDD17F6B8C8CB95001817958 /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
+		BEECA3011F27C81F696690AB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		C6A41F688B6F6B85AB9CA044 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CADF6323A06B8970DB6658F7 /* SocialLoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginUseCase.swift; sourceTree = "<group>"; };
+		D0ECBD54082C96D4F8B67494 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D0F19FE0C4CC4A0E70FFA394 /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		D92228CCE764A08872FE9B34 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		DA2DD75E4F7BB85D46D74E27 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		DCA11E8D692AC571C94D735D /* AuthSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSession.swift; sourceTree = "<group>"; };
+		E68EFC870B8CFBEB9A11790E /* AuthenticationSystem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AuthenticationSystem.entitlements; sourceTree = "<group>"; };
+		EC8192D44C58B86105B42890 /* AuthRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRemoteDataSource.swift; sourceTree = "<group>"; };
+		F566AB94BAEF9B6CF463D6B6 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		FE06E94D9B5376A9556BD003 /* SignupUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUseCase.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4A744D9B422E558F10122A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21EF33E9535FBEDA4D8565AE /* FirebaseAuth in Frameworks */,
+				66D7FF53A5F3CBD3BC279520 /* GoogleSignIn in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07AC4BEC48D4066B922AA683 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				4357B85BDE956847A216AAD9 /* AppCoordinator.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		0D9BED78A74E615EF3E3316E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CE30AD0732B1767D9E33CE37 /* Storage */,
+				54306061A7EEC340F4A33137 /* Utils */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		17DA26C46DF86EA1A8C1AC14 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				41F3BCB93C60BD6A147078FA /* AuthRepositoryImpl.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		1E043E7C77DD44567C432C04 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0FFA315069786593041892C2 /* AppleSignInHelper.swift */,
+				AD9C84863F2173AC5C136444 /* GoogleSignInHelper.swift */,
+				7E4C25A6A003B689410A455F /* Toast.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		41DAAF4922582F6A3FB78B2A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6FABFC5A05A2567F9FED735C /* Remote */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		54306061A7EEC340F4A33137 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				26D7D11C12BC49AE5186DE03 /* SessionManager.swift */,
+				D0F19FE0C4CC4A0E70FFA394 /* ViewState.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6FABFC5A05A2567F9FED735C /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				EC8192D44C58B86105B42890 /* AuthRemoteDataSource.swift */,
+				8F59D1CA56EF81BE211BB83B /* NetworkServiceProtocol.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		708EC47AE5EF515CEA19E130 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				17DA26C46DF86EA1A8C1AC14 /* Repositories */,
+				41DAAF4922582F6A3FB78B2A /* Sources */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		711A8BC73D68A14727A2DC02 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				DCA11E8D692AC571C94D735D /* AuthSession.swift */,
+				B1D05F4966F1EDB985855074 /* User.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		7C58B37C56E71076F28FE9FC /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				711A8BC73D68A14727A2DC02 /* Entities */,
+				F0D6672949A8839C647EE147 /* Repositories */,
+				7CDD81E8E2B211F6761B013E /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		7CDD81E8E2B211F6761B013E /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				F566AB94BAEF9B6CF463D6B6 /* LoginUseCase.swift */,
+				4823E0738EF64FF697A097A6 /* LogoutUseCase.swift */,
+				FE06E94D9B5376A9556BD003 /* SignupUseCase.swift */,
+				CADF6323A06B8970DB6658F7 /* SocialLoginUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		AE094DAA50E63C5B7A26D914 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B452A03E68EC9B8653DC1ACE /* CustomTextField.swift */,
+				1429B6FF375FA1E4333C19D4 /* PrimaryButton.swift */,
+				86474F59E21475165A8C5D46 /* SocialIconButton.swift */,
+				AE65DF7665C92A25496949A0 /* ToastView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B2967D54C70FF6EB7B7E284C /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				AE094DAA50E63C5B7A26D914 /* Components */,
+				07AC4BEC48D4066B922AA683 /* Navigation */,
+				D4CD111DAABBC01127925905 /* Screens */,
+				1E043E7C77DD44567C432C04 /* Utils */,
+				B74E45E55F53EBCB743C598A /* ViewModels */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B74E45E55F53EBCB743C598A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BEECA3011F27C81F696690AB /* HomeViewModel.swift */,
+				D92228CCE764A08872FE9B34 /* LoginViewModel.swift */,
+				DA2DD75E4F7BB85D46D74E27 /* SignupViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CCC36722B24BF3F19733BFD6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E68EFC870B8CFBEB9A11790E /* AuthenticationSystem.entitlements */,
+				2991FF703807B071A24E9FCB /* AuthenticationSystemApp.swift */,
+				5345C7255C888886421DC601 /* GoogleService-Info.plist */,
+				1F4E1E21ABC77C821F75D72A /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CE30AD0732B1767D9E33CE37 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				BDD17F6B8C8CB95001817958 /* KeychainStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		D4CD111DAABBC01127925905 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C6A41F688B6F6B85AB9CA044 /* HomeView.swift */,
+				D0ECBD54082C96D4F8B67494 /* LoginView.swift */,
+				6AB015D4B0A5B4ED8591CBF0 /* SignupView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E822820699BF6D6819960765 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2609C6AF9FB2D796C74A694C /* AuthenticationSystem.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0D6672949A8839C647EE147 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				A6383A0504E66A4C15251ABC /* AuthRepositoryProtocol.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		FC7551AE3598A9DD67D26B74 = {
+			isa = PBXGroup;
+			children = (
+				CCC36722B24BF3F19733BFD6 /* App */,
+				0D9BED78A74E615EF3E3316E /* Core */,
+				708EC47AE5EF515CEA19E130 /* Data */,
+				FF7A38D53CD702A20DCE4135 /* DI */,
+				7C58B37C56E71076F28FE9FC /* Domain */,
+				B2967D54C70FF6EB7B7E284C /* Presentation */,
+				E822820699BF6D6819960765 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF7A38D53CD702A20DCE4135 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				49BECBCF52E8418F91EF21E2 /*  .swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BAD4BD7690BE9B489159E65 /* AuthenticationSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCC23049B69FB832A380F809 /* Build configuration list for PBXNativeTarget "AuthenticationSystem" */;
+			buildPhases = (
+				7E09EA624EB5FC15CE6CAD95 /* Sources */,
+				18A11A3390235A215F3E9BAA /* Resources */,
+				B4A744D9B422E558F10122A2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AuthenticationSystem;
+			packageProductDependencies = (
+				E67047B6790FC7F794782511 /* FirebaseAuth */,
+				3B97EC9E61F619133493A37C /* GoogleSignIn */,
+			);
+			productName = AuthenticationSystem;
+			productReference = 2609C6AF9FB2D796C74A694C /* AuthenticationSystem.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D80C3BF0DEF26CB076D25A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 2EF422A2ED50AE69AFD92134 /* Build configuration list for PBXProject "ios-swiftui-authentication-system" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = FC7551AE3598A9DD67D26B74;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				22634FAD223457EA54CB9020 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				BE270F8075D7937D7976D71D /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E822820699BF6D6819960765 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BAD4BD7690BE9B489159E65 /* AuthenticationSystem */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18A11A3390235A215F3E9BAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AFF50DBCCBEA1960048C39E /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E09EA624EB5FC15CE6CAD95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6257F14C1D40F699C0C80B28 /*  .swift in Sources */,
+				13531B2B67F3AC0114CB896C /* AppCoordinator.swift in Sources */,
+				8B0277AD0B9E5E1CA37A45B3 /* AppleSignInHelper.swift in Sources */,
+				68DB81DD7144698055C945BA /* AuthRemoteDataSource.swift in Sources */,
+				0640D2C51106D6C786646892 /* AuthRepositoryImpl.swift in Sources */,
+				CE46EDD4398E718547AA84CA /* AuthRepositoryProtocol.swift in Sources */,
+				8A3A6DF996A0181DF08C574C /* AuthSession.swift in Sources */,
+				ECB5BFE3459A5DABD825E04A /* AuthenticationSystemApp.swift in Sources */,
+				F669C5A34DD1F7C1D449C738 /* CustomTextField.swift in Sources */,
+				BB764A18695A34D76E3CA467 /* GoogleSignInHelper.swift in Sources */,
+				78C3921D9BE78A128EAB2391 /* HomeView.swift in Sources */,
+				E0C7D07618CA28CA921FCA14 /* HomeViewModel.swift in Sources */,
+				E013CC77E63387971C99F60E /* KeychainStorage.swift in Sources */,
+				50C307C9608B105F08E8313E /* LoginUseCase.swift in Sources */,
+				16E62AD49E1B820D63F4DD37 /* LoginView.swift in Sources */,
+				E694C663D0006E0084624AC4 /* LoginViewModel.swift in Sources */,
+				C825619EF65BE4AC7A901345 /* LogoutUseCase.swift in Sources */,
+				D0C66FD44CB4E8F000618ED4 /* NetworkServiceProtocol.swift in Sources */,
+				98A59F199D331A3C87B655E1 /* PrimaryButton.swift in Sources */,
+				686859F0BEF548CB2952134F /* SessionManager.swift in Sources */,
+				7E0E220F27F61AC92C87FA63 /* SignupUseCase.swift in Sources */,
+				49DA3A12C2961E557605722A /* SignupView.swift in Sources */,
+				AE53385044508FEB16A12BDA /* SignupViewModel.swift in Sources */,
+				DB5EEABB908FCD77F6D4B14D /* SocialIconButton.swift in Sources */,
+				4DC8EA684A8EFE1B210C88D4 /* SocialLoginUseCase.swift in Sources */,
+				DAE129EB560A5990DF10A66C /* Toast.swift in Sources */,
+				BE86C28BC94CB5AC707B5047 /* ToastView.swift in Sources */,
+				2F6CE9E8FBD6A43AFAB42AC0 /* User.swift in Sources */,
+				A94F42A2FD520F69313A9DCE /* ViewState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0DE7DE2B76A1BF8276211557 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2D516A898AF8CE8B5D8ABB76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3B79ACF8C218F75AE60384F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/AuthenticationSystem.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_ASSET_PATHS = "\"Resources\"";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ck.events.app;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D3AE9BF60F88B791CFCF0FA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/AuthenticationSystem.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_ASSET_PATHS = "\"Resources\"";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ck.events.app;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EF422A2ED50AE69AFD92134 /* Build configuration list for PBXProject "ios-swiftui-authentication-system" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D516A898AF8CE8B5D8ABB76 /* Debug */,
+				0DE7DE2B76A1BF8276211557 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BCC23049B69FB832A380F809 /* Build configuration list for PBXNativeTarget "AuthenticationSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3AE9BF60F88B791CFCF0FA9 /* Debug */,
+				3B79ACF8C218F75AE60384F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		22634FAD223457EA54CB9020 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.15.0;
+			};
+		};
+		BE270F8075D7937D7976D71D /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3B97EC9E61F619133493A37C /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE270F8075D7937D7976D71D /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		E67047B6790FC7F794782511 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22634FAD223457EA54CB9020 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7D80C3BF0DEF26CB076D25A8 /* Project object */;
+}

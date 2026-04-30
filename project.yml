@@ -1,0 +1,47 @@
+name: ios-swiftui-authentication-system
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: 16.0
+packages:
+  Firebase:
+    url: https://github.com/firebase/firebase-ios-sdk.git
+    from: 10.15.0
+  GoogleSignIn:
+    url: https://github.com/google/GoogleSignIn-iOS.git
+    from: 7.1.0
+targets:
+  AuthenticationSystem:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources: 
+      - path: App
+      - path: Core
+      - path: Data
+      - path: DI
+      - path: Domain
+      - path: Presentation
+    dependencies:
+      - package: Firebase
+        product: FirebaseAuth
+      - package: GoogleSignIn
+        product: GoogleSignIn
+    entitlements:
+      path: App/AuthenticationSystem.entitlements
+    info:
+      path: App/Info.plist
+      properties:
+        GIDClientID: 1049161737791-s366h0p77b25of090n4lcu58k84uuhte.apps.googleusercontent.com
+        CFBundleURLTypes:
+          - CFBundleURLSchemes:
+              - com.googleusercontent.apps.1049161737791-s366h0p77b25of090n4lcu58k84uuhte
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.ck.events.app
+        SWIFT_VERSION: 5.0
+        TARGETED_DEVICE_FAMILY: "1,2"
+        DEVELOPMENT_ASSET_PATHS: '"Resources"'
