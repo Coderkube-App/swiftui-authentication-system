@@ -74,3 +74,9 @@ To integrate a custom backend:
 1. Navigate to `Data/Sources/Remote/AuthRemoteDataSource.swift`.
 2. Implement your API logic inside the protocol methods instead of, or alongside, the Firebase calls using `URLSession`.
 3. The rest of the app (Domain and Presentation) will remain untouched!
+
+
+
+## License
+
+This project is licensed under the Apache-2.0 License.

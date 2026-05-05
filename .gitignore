@@ -66,3 +66,5 @@ fastlane/test_output
 
 # Google Services (e.g. APIs or Firebase)
 GoogleService-Info.plist
+temp_auto_push.bat
+temp_interactive_push.bat

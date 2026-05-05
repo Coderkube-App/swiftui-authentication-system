@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2026 Coderkube Technologies - SwiftUICleanArchitectureApp. All rights reserved.
+// Copyright (c) 2026 Coderkube Technologies - SwiftUI-Authentication-System. All rights reserved.
 //
 
 import Foundation
